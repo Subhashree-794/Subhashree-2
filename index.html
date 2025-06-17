@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- home page -->
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png"
+            alt="MARVEL QUIZ">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- home-content -->
+    <section class="home">
+        <div class="content">
+            <h2>Welcome to the Marvel Quiz!</h2>
+            <p>ARE YOU A TRUE MARVEL FAN ? TEST YOURSELF AND HAVE FUN !</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+    </section>
+
+    <!-- Instructions -->
+    <section class="instruction">
+        <h4>Instructions</h4>
+        <ol>
+            <li>You will be given total 10 questions.</li>
+            <li>+5 points for Correct answers, -1 point for Incorrect answers and 0 points for Skipped answers.
+            </li>
+            <li>Read the questions carefully and answer.</li>
+        </ol>
+        <p>Good luck !</p>
+        <div class="button">
+            <button class="Exit">Back to Home</button>
+            <button class="Continue">Continue</button>
+        </div>
+    </section>
+
+    <!-- quiz-section -->
+    <section class="quiz_section">
+        <div class="quizpart">
+            <p class="score">SCORE : 0 / 50</p>
+            <div class="text">
+                <div class="quiz">
+                    <div class="head">
+                        <h3 class="question">question</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="anspart">
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="a">
+                            <label for="a" id="option_1">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="b">
+                            <label for="b" id="option_2">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="c">
+                            <label for="c" id="option_3">Quiz option</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" class="answer" id="d">
+                            <label for="d" id="option_4">Quiz option</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pic">
+                    <img class="photo" src="1.jpg" alt="pic">
+                </div>
+            </div>
+            <div class="btn">
+                <button class="skip">skip</button>
+                <button class="next">next</button>
+                <button class="Submit">submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- result -->
+    <section class="result">
+        <div class="res">
+            <h2>Congratulations on completing the quiz!</h2>
+            <h3>Your score : ${score} / ${total} Points</h3>
+            <p>Correct Answers : ${correct_ans}</p>
+            <p>Wrong Answers : ${wrong_ans}</p>
+            <p>Attempted Answers : ${attempted}</p>
+            <p>unattempted Answers : ${unattempted}</p>
+            <div class="button">
+                <button class="reload-button">Exit</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,467 @@
+.hidden {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle,
+.hamburger {
+    display: none;
+}
+
+body {
+    background-image: url("bg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/* everypage */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+header img {
+    margin: 0.7rem;
+    width: 7rem;
+    height: 2.5rem;
+    border: 2px solid black;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav>ul {
+    display: flex;
+    margin: 1rem;
+    gap: 50px;
+    text-align: right;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #ffe5da;
+    font-family: "Acme", sans-serif;
+}
+
+
+/* home */
+.home {
+    background-color: #440909e8;
+    padding: 3.5rem;
+    margin: 5rem auto;
+    height: fit-content;
+    width: fit-content;
+    text-align: center;
+}
+
+.content h2 {
+    font-family: "Love Ya Like A Sister", cursive;
+    color: #ffe5da;
+    font-size: 4.5rem;
+    font-weight: 100;
+}
+
+.content p {
+    font-family: "Bangers", sans-serif;
+    color: rgba(255, 255, 0, 0.836);
+    font-size: 2rem;
+    letter-spacing: 1.7px;
+    margin-top: 15px;
+}
+
+#start-btn {
+    margin-top: 2.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #380101;
+    color: #ffe5da;
+    transition: transform 0.2s;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+
+#start-btn:hover {
+    color: #440909;
+    font-weight: 900;
+    background-color: #FF8568;
+    box-shadow: 0 0 10px #FF8568;
+    transform: scale(1.05);
+}
+
+
+/* instruction-page */
+.instruction {
+    background-color: #440909e8;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+.instruction h4 {
+    font-family: "Bangers", sans-serif;
+    color: rgba(255, 255, 0, 0.788);
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 4px;
+}
+
+ol {
+    color: #ffe5da;
+    font-family: "Acme", sans-serif;
+    font-size: 1.7rem;
+    padding: 0.8rem;
+}
+
+ol li:nth-child(2) {
+    color: #ffe5da;
+    font-family: "Acme", sans-serif;
+    font-size: 1.7rem;
+    width: 60vw;
+}
+
+.instruction p {
+    text-align: center;
+    color: #FF8568;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 50;
+    font-size: 4rem;
+}
+
+.instruction .button {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.Exit,
+.Continue {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #380101;
+    color: #ffe5da;
+    transition: transform 0.2s;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+
+.Exit:hover,
+.Continue:hover {
+    color: #440909;
+    font-weight: 900;
+    background-color: #FF8568;
+    box-shadow: 0 0 10px #FF8568;
+    transform: scale(1.05);
+}
+
+/* quizsection */
+.quizpart {
+    background-color: #440909e8;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem auto;
+    height: fit-content;
+    width: 70vw;
+}
+
+.skip,
+.next,
+.Submit {
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #380101;
+    color: #ffe5da;
+    transition: transform 0.2s;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+
+.skip:hover,
+.next:hover,
+.Submit:hover {
+    color: #440909;
+    font-weight: 900;
+    background-color: #FF8568;
+    box-shadow: 0 0 10px #FF8568;
+    transform: scale(1.05);
+}
+
+.btn {
+    text-align: right;
+}
+
+.score {
+    text-align: right;
+    font-family: "Acme", sans-serif;
+    font-size: 1rem;
+    color: #FF8568;
+    margin-bottom: 1rem;
+}
+
+.head h3 {
+    font-family: "Love Ya Like A Sister", cursive;
+    font-size: 1.7rem;
+    color: #c7fefe;
+    letter-spacing: 1.5px;
+    margin-bottom: 1rem;
+}
+
+.anspart ul li {
+    font-family: "Acme", sans-serif;
+    font-size: 1.2rem;
+    color: #ffe5da;
+    border: none;
+    border-radius: 25px;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: #380101;
+    transition: transform 0.2s;
+    width: 40vw;
+}
+
+.anspart ul li:hover {
+    transform: scale(1.05);
+}
+
+.quizpart .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text {
+    width: 40vw;
+}
+
+.pic img {
+    width: 300px;
+    height: 300px;
+    margin-left: 2rem;
+    border-radius: 50%;
+    border: none;
+}
+
+/* result-page */
+.res {
+    background-color: #440909e8;
+    padding: 1.5rem 2.5rem;
+    margin: 1.5rem auto;
+    height: fit-content;
+    width: 70vw;
+}
+
+.res h2 {
+    text-align: center;
+    color: #FF8568;
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 50;
+    font-size: 3rem;
+}
+
+.res h3 {
+    text-align: center;
+    font-family: "Acme", sans-serif;
+    font-size: 2rem;
+    color: #ffff00c9;
+    margin: 1rem;
+}
+
+.res p {
+    font-family: "Acme", sans-serif;
+    font-size: 1.5rem;
+    color: #ffe5da;
+    text-align: center;
+}
+
+.res .button {
+    text-align: center;
+}
+
+.reload-button {
+    margin-top: 2rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+    border-radius: 50px;
+    border: none;
+    background-color: #380101;
+    color: #ffe5da;
+    transition: transform 0.2s;
+    font-family: "Love Ya Like A Sister", cursive;
+}
+
+.reload-button:hover {
+    color: #440909;
+    font-weight: 900;
+    background-color: #FF8568;
+    box-shadow: 0 0 10px #FF8568;
+    transform: scale(1.05);
+}
+
+
+
+/* mobile-css */
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-image: url("bgphone.png");
+    }
+
+    header img {
+        margin: 0rem;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    nav {
+        position: absolute;
+        top: 0%;
+        left: 0;
+        right: 0;
+        background-color: #380101;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 2;
+    }
+
+    nav ul li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .menu-toggle:checked~nav {
+        max-height: 300px;
+    }
+
+    .hamburger {
+        display: block;
+        color: white;
+        font-size: 2rem;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    .home {
+        padding: 2rem;
+        width: 80vw;
+    }
+
+    .home h2 {
+        font-size: 3.5rem;
+    }
+
+    .home p {
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .instruction {
+        width: 80vw;
+        padding: 2rem;
+    }
+
+    .instruction h4 {
+        font-size: 2rem;
+    }
+
+    .instruction p {
+        font-size: 3.5rem;
+    }
+
+    ol li {
+        font-size: 1.3rem;
+    }
+
+    ol li:nth-child(2) {
+        width: 75vw;
+        font-size: 1.3rem;
+    }
+
+    .instruction .button {
+        gap: 5px;
+    }
+
+    .Exit,
+    .Continue {
+        font-size: 1.5rem;
+        width: fit-content;
+    }
+
+    .quizpart {
+        width: 85vw;
+        padding: 1rem;
+        margin: 0.7rem auto;
+    }
+
+    .head h3 {
+        font-size: 1.3rem;
+        width: 85vw;
+    }
+
+    .quizpart .content {
+        flex-direction: column-reverse;
+    }
+
+    .pic img {
+        width: 200px;
+        height: 200px;
+        margin-left: 0rem;
+    }
+
+    .anspart ul li {
+        width: 80vw;
+    }
+
+    .skip,
+    .next,
+    .Submit {
+        margin-left: 0.3rem;
+        transition: none;
+    }
+
+    .skip:hover,
+    .next:hover,
+    .Submit:hover {
+        color: #ffe5da;
+        font-weight: 400;
+        box-shadow: none;
+        background-color: #380101;
+    }
+
+    .res {
+        width: 80vw;
+        padding: 1.5rem;
+        margin: 5rem auto;
+    }
+
+    .res h2 {
+        font-size: 2rem;
+    }
+
+    .res h3 {
+        font-size: 1.3rem;
+    }
+
+    .res p {
+        font-size: 1rem;
+    }
+
+    .reload-button {
+        font-size: 1.5rem;
+    }
+
+}
